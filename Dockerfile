@@ -1,5 +1,5 @@
 FROM ubuntu:12.04
-RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+ENV DEBIAN_FRONTEND noninteractive
 ADD setup.sh /tmp/setup.sh
 RUN /bin/bash /tmp/setup.sh
 
