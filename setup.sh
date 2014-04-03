@@ -1,6 +1,5 @@
 #!/bin/bash
 
-rm /bin/sh && ln -s /bin/bash /bin/sh
 sed -i.bak 's/main$/main universe/' /etc/apt/sources.list
 echo "deb http://us.archive.ubuntu.com/ubuntu/ precise universe" >> /etc/apt/sources.list
 echo "deb-src http://us.archive.ubuntu.com/ubuntu/ precise universe" >> /etc/apt/sources.list
